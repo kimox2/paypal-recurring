@@ -30,6 +30,7 @@ module PayPal
       attr_accessor :trial_frequency
       attr_accessor :trial_length
       attr_accessor :trial_period
+      attr_accessor :cycles
       attr_accessor :trial_amount
 
       def initialize(options = {})
@@ -195,6 +196,7 @@ module PayPal
           :trial_amount,
           :item_category,
           :item_name,
+          :cycles,
           :item_amount,
           :item_quantity
         )
